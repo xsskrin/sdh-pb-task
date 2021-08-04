@@ -1,0 +1,7 @@
+node_modules/
+server/public/
+server/views/
+.env
+.DS_Store
+
+src/utils/translations/

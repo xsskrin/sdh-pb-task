@@ -1,0 +1,27 @@
+@mixin fontface($local, $weight, $style: "") {
+	@font-face {
+		font-family: $name;
+		src: 	local($name + ' ' + $local),
+				url($fileName + '-' + $local + $extension) format($format);
+		font-weight: $weight;
+		@if ($style != "") {
+			font-style: unquote($style);
+		}
+	}
+}
+
+$name: 'Montserrat';
+$fileName: '/static/fonts/Montserrat';
+$extension: '.ttf';
+$format: 'truetype';
+@include fontface('Regular', 400);
+@include fontface('Medium', 500);
+@include fontface('Bold', 600);
+
+$name: 'Prompt';
+$fileName: '/static/fonts/Prompt';
+$extension: '.ttf';
+$format: 'truetype';
+@include fontface('ExtraLight', 200);
+@include fontface('Regular', 400);
+@include fontface('SemiBold', 600);

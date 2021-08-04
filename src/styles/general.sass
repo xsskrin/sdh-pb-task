@@ -1,0 +1,46 @@
+@import "mixins"
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+html
+	font-family: $primaryFont, sans-serif
+	line-height: $baseLineHeight
+	overflow-x: hidden
+	height: 100%
+
+body
+	color: $textColor
+	height: 100%
+	background: linear-gradient(135deg, #fff, #eee)
+
+#app
+	height: 100%
+
+button
+	outline: none
+	border: 0
+	box-shadow: none
+	font-family: $primaryFont, sans-serif
+
+input, textarea
+	outline: none
+	border: 0
+	box-shadow: none
+	font-family: $primaryFont, sans-serif
+
+input[type=password]
+	font: small-caption
+
+input[type=number]
+	&::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+		-webkit-appearance: none
+		margin: 0
+
+textarea
+	resize: none
+
+a
+	text-decoration: none

@@ -48,6 +48,7 @@ const Back = styled.div`
 	font-size: 20px;
 	margin-bottom: 16px;
 	cursor: pointer;
+	display: inline-block;
 
 	&:hover {
 		color: ${primary};
@@ -80,6 +81,7 @@ const CompanyDetailsPage = ({
 	const { companySymbol } = urlParams;
 
 	useEffect(() => {
+		setCompany(null);
 		setLoading(true);
 
 		api.get(`/query?function=OVERVIEW&symbol=${companySymbol}&apikey=demo`)

@@ -8,9 +8,9 @@ import { Table, Thead, Tbody, Tr, Th, Td } from '@chakra-ui/react';
 import $portfolio from '../service';
 
 const StyledSearchResults = styled.div`
-	border: 2px solid ${primary};
 	padding: 8px;
 	border-radius: 4px;
+	background: rgba(0, 0, 0, .04);
 `;
 
 const StyledItem = styled.div`

@@ -7,6 +7,7 @@ import SavedItems from './SavedItems';
 
 const PortfolioWrapper = styled.div`
 	padding: 8px;
+	min-height: 100%;
 	flex-grow: 1;
 	display: flex;
 	align-items: flex-start;
@@ -36,6 +37,7 @@ const PortfolioPage = () => {
 			</Half>
 			<Separator />
 			<Half>
+				<Label>Your portfolio</Label>
 				<SavedItems />
 			</Half>
 		</PortfolioWrapper>

@@ -8,12 +8,11 @@
 		"node": "14.16.0"
 	},
 	"scripts": {
-		"build": "npm run translate && webpack --config webpack.production.js",
+		"build": "webpack --config webpack.production.js",
 		"dev": "nodemon --watch package.json --watch server --watch .env --ignore server/**/*.fake.* --ignore server/public --ignore server/views server/server",
 		"lint": "./node_modules/.bin/eslint 'src/**/*.js'",
 		"production": "node server/server",
-		"start": "NODE_ENV=development node server/server",
-		"translate": "node ./utils/create_translations"
+		"start": "NODE_ENV=development node server/server"
 	},
 	"husky": {
 		"hooks": {

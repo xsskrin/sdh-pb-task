@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledNavbar = styled.div`
-	display: flex;
-	align-items: center;
+	flex-shrink: 0;
 	background: #fff;
 	box-shadow: 1px 2px 3px rgba(0, 0, 0, .25);
 	padding: 16px;
@@ -11,13 +10,15 @@ const StyledNavbar = styled.div`
 
 const Title = styled.div`
 	color: #16a085;
-	font-size: 2em;
-	margin-right: 32px;
+	font-size: 32px;
+	line-height: 1.15;
+	margin-bottom: 4px;
 `;
 
 const Item = styled.div`
 	color: #000;
-	font-size: 1.6em;
+	font-size: 24px;
+	line-height: 1.15;
 `;
 
 const Navbar = () => {

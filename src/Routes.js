@@ -8,7 +8,7 @@ const Routes = () => {
 	return (
 		<Switch>
 			<PortfolioPage exact path="/" />
-			<CompanyDetailsPage path="/company/:companyName" />
+			<CompanyDetailsPage path="/company/:companySymbol" />
 			<Page404 anyway />
 		</Switch>
 	);

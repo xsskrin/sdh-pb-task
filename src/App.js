@@ -7,14 +7,6 @@ import { ChakraProvider } from "@chakra-ui/react"
 import Routes from './Routes';
 import 'styles/main.sass';
 
-window.addFont = (name, t) => {
-	const l = document.createElement('div');
-	l.innerHTML = t;
-
-	document.head.appendChild(l.children[0]);
-	document.documentElement.style.fontFamily = name;
-};
-
 const App = () => {
 	return (
 		<ChakraProvider>

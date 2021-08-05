@@ -34,7 +34,7 @@ module.exports = {
 				},
 			},
 			{
-				test: /\.ts$/,
+				test: /\.tsx?$/,
 				use: 'ts-loader',
 				exclude: /node_modules/,
 			},
@@ -106,7 +106,7 @@ module.exports = {
 		],
 	},
 	resolve: {
-		extensions: ['*', '.ts', '.js'],
+		extensions: ['*', '.tsx', '.ts', '.js'],
 		modules: [
 			path.resolve(__dirname, 'src/'),
 			path.resolve(__dirname, 'node_modules/'),
